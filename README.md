@@ -1,4 +1,4 @@
-# **🌍GeoMindMap: Investigating LLM Reasoning in Geo-localization**
+# GeoMindMap: Investigating LLM Reasoning in Geo-localization
 
 Try Demo: https://wyjxx.github.io/geomindmap/
 
@@ -7,8 +7,7 @@ GeoMindMap is an end-to-end pipeline and visualization framework designed to mak
 This project was developed as part of my Bachelor’s Thesis at TUM (“Tracing Locations Through Words and Images: Investigating Large Language Model Reasoning in Geo-localization”).
 
 
-<img src="readme_pic/overview.png" alt="Demo" width="75%">
-
+<img src="assets/overview.png" alt="Overview" width="75%">
 
 ## **Motivation**
 
@@ -32,7 +31,7 @@ LLMs demonstrate remarkable reasoning ability, but their reasoning process is of
 
 ## **Pipeline Overview**
 
-<img src="readme_pic/GeoMindMap.png" alt="Demo" width="75%">
+<img src="assets/GeoMindMap.png" alt="Pipeline overview" width="75%">
 
 The GeoMindMap pipeline consists of five main modules:
 
@@ -78,7 +77,7 @@ Location Map: shows geographic entities hierarchically.
 
 Interactive D3.js web interface supports step-by-step playback.
 
-<img src="readme_pic/Webpage.png" alt="Demo" width="75%">
+<img src="assets/Webpage.png" alt="Webpage" width="75%">
 
 ## **Unique Contributions**
 
@@ -107,7 +106,7 @@ Depth-First (DF)
 Strategy Switch
 
 ## **Cross-Model Benchmarking**
-Evaluates OpenAI o4-mini, Gemini 2.5 Pro, Claude Sonnet 4 on dataset of 86 smartphone photos.
+Evaluates OpenAI o4-mini, Gemini 2.5 Pro, Claude Sonnet 4 on dataset of 86 smartphone photos (This repository is currently simplified for demo use and contains 10 photos of them).
 
 All achieve ~city-level accuracy
 
@@ -135,27 +134,24 @@ Step-wise updates: nodes highlighted, candidate locations excluded/confirmed
 geomindmap/
 │
 ├── data/
-│ └── JSON outputs of different models (entities, vi_map, l_map, para_match, etc.)
-│
+│   └── Demo JSON outputs for ChatGPT, Claude, and Gemini
+├── docs/
+│   ├── thesis.pdf
+│   └── thesis.pptx
 ├── pictures/
-│ └── 86 filitered images used for geo-localization tasks
-│
+│   ├── 10 demo images
+│   ├── gps.json
+│   └── index.json
 ├── pipeline/
-│ ├── reasoning.py # Generate step-wise reasoning traces from LLMs
-│ ├── extract.py # Extract entities and build hierarchical maps
-│ ├── match.py # Match reasoning steps with entities
-│ ├── coordinate.py # Compute 2D coordinates for visualization
-│ └── main.py # Orchestrate the full pipeline
-│
-├── readme_pic/
-│ └── Pictures for README
-│
-├── thesis.pdf 
-├── thesis.pptx 
-├── index.html # Interactive webpage visualization
-└── README.md # Project documentation
-</pre>
+│   ├── reasoning.py
+│   ├── extract.py
+│   ├── match.py
+│   ├── coordinate.py
+│   └── main.py
+├── index.html
+└── README.md
+```
 
-## **Acknowledgements**
+## Acknowledgements
 
-This project was developed as part of my Bachelor’s Thesis at TUM (Tracing Locations Through Words and Images), supervised by Dr. Mark Huasong Meng and Prof. Dr. Chunyang Chen.
+This project was developed as part of a Bachelor's Thesis at TUM, supervised by Dr. Mark Huasong Meng and Prof. Dr. Chunyang Chen.
