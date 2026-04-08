@@ -1,0 +1,102 @@
+﻿{
+    "pic10.png":  {
+                      "GPS":  {
+                                  "lat":  50.36094722222222,
+                                  "lon":  7.595983333333333,
+                                  "altitude":  124.099
+                              },
+                      "COUNTRY":  "Germany",
+                      "CITY":  "Koblenz",
+                      "STREET":  null
+                  },
+    "pic11.png":  {
+                      "GPS":  {
+                                  "lat":  50.41318611111111,
+                                  "lon":  7.330102777777777,
+                                  "altitude":  0.0
+                              },
+                      "COUNTRY":  "Germany",
+                      "CITY":  "Nickenich",
+                      "STREET":  "Kolpingstra脽e"
+                  },
+    "pic14.png":  {
+                      "GPS":  {
+                                  "lat":  48.15088611111111,
+                                  "lon":  11.573380555555556,
+                                  "altitude":  562.01
+                              },
+                      "COUNTRY":  "Germany",
+                      "CITY":  "Munich",
+                      "STREET":  "Barer Stra脽e"
+                  },
+    "pic20.png":  {
+                      "GPS":  {
+                                  "lat":  48.85317222222223,
+                                  "lon":  10.49275,
+                                  "altitude":  493.088
+                              },
+                      "COUNTRY":  "Germany",
+                      "CITY":  "N枚rdlingen",
+                      "STREET":  "Frauengasse"
+                  },
+    "pic22.png":  {
+                      "GPS":  {
+                                  "lat":  48.18219444444444,
+                                  "lon":  11.61063888888889,
+                                  "altitude":  544.754
+                              },
+                      "COUNTRY":  "Germany",
+                      "CITY":  "Munich",
+                      "STREET":  "Rheinlandstra脽e"
+                  },
+    "pic23.png":  {
+                      "GPS":  {
+                                  "lat":  48.140027777777775,
+                                  "lon":  11.557705555555556,
+                                  "altitude":  568.399
+                              },
+                      "COUNTRY":  "Germany",
+                      "CITY":  "Munich",
+                      "STREET":  "Pfefferstra脽e"
+                  },
+    "pic3.png":  {
+                     "GPS":  {
+                                 "lat":  48.17035555555555,
+                                 "lon":  11.573633333333333,
+                                 "altitude":  0.0
+                             },
+                     "COUNTRY":  "Germany",
+                     "CITY":  "Munich",
+                     "STREET":  "Belgradstra脽e"
+                 },
+    "pic4.png":  {
+                     "GPS":  {
+                                 "lat":  47.660624999999996,
+                                 "lon":  11.371702777777779,
+                                 "altitude":  0.0
+                             },
+                     "COUNTRY":  "Germany",
+                     "CITY":  "Kochel am See",
+                     "STREET":  "Bahnhofstra脽e"
+                 },
+    "pic5.png":  {
+                     "GPS":  {
+                                 "lat":  47.662280555555554,
+                                 "lon":  11.241416666666666,
+                                 "altitude":  0.0
+                             },
+                     "COUNTRY":  "Germany",
+                     "CITY":  "Ohlstadt",
+                     "STREET":  "Kocheler Stra脽e"
+                 },
+    "pic7.png":  {
+                     "GPS":  {
+                                 "lat":  47.51086111111111,
+                                 "lon":  11.092480555555555,
+                                 "altitude":  0.0
+                             },
+                     "COUNTRY":  "Germany",
+                     "CITY":  "Garmisch-Partenkirchen",
+                     "STREET":  null
+                 }
+}
