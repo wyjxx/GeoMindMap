@@ -88,7 +88,7 @@
         </select>
         <div>
           <div class="input-group input-group-sm">
-            <input id="imgInput" type="text" class="form-control" placeholder="e.g. p1, p2">
+            <input id="imgInput" type="text" class="form-control" placeholder="e.g. pic10, pic23">
             <button class="btn btn-primary" onclick="selectImage()">Select</button>
           </div>
           <div id="imgError" class="text-danger small"></div>
@@ -160,8 +160,10 @@
   let showVisitedCount = true;
   let autoPlayInterval = null;
   let gpsData = {};
+  const PICTURES_DIR = "./pictures";
+  const DATA_DIR = "./data";
 
-  fetch('pictures/gps.json')
+  fetch(`${PICTURES_DIR}/gps.json`)
     .then(res => res.json())
     .then(data => { gpsData = data; })
     .catch(err => console.error("Failed to load gps.json:", err));
@@ -188,7 +190,7 @@
   function selectImage() {
     const imgId = document.getElementById('imgInput').value.trim();
     if (!imgId) return;
-    const imgPathPng = `pictures/${imgId}.png`;
+    const imgPathPng = `${PICTURES_DIR}/${imgId}.png`;
     const imgElem = document.getElementById('cornerImg');
     const errElem = document.getElementById('imgError');
     fetch(imgPathPng, { method: 'HEAD' }).then(res => {
@@ -227,7 +229,7 @@
   
 
 // fetch pic menu list from index.json
-fetch('pictures/index.json')
+fetch(`${PICTURES_DIR}/index.json`)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -257,10 +259,10 @@ fetch('pictures/index.json')
   function loadDataAndRender(imgId) {
     const model = document.getElementById("modelSelect").value || "chatgpt";
     Promise.all([
-      fetch(`data/${model}/${imgId}/vi_map_layout.json`).then(res => res.json()),
-      fetch(`data/${model}/${imgId}/l_map_layout.json`).then(res => res.json()),
-      fetch(`data/${model}/${imgId}/para_match.json`).then(res => res.json()),
-      fetch(`data/${model}/${imgId}/reasoning.json`).then(res => res.json())
+      fetch(`${DATA_DIR}/${model}/${imgId}/vi_map_layout.json`).then(res => res.json()),
+      fetch(`${DATA_DIR}/${model}/${imgId}/l_map_layout.json`).then(res => res.json()),
+      fetch(`${DATA_DIR}/${model}/${imgId}/para_match.json`).then(res => res.json()),
+      fetch(`${DATA_DIR}/${model}/${imgId}/reasoning.json`).then(res => res.json())
     ]).then(([vi, l, match, reasoning]) => {
       viLayout = vi; 
       lLayout = l; 
@@ -576,4 +578,3 @@ fetch('pictures/index.json')
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
